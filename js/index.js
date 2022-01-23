@@ -1,16 +1,14 @@
-// Can be edited
-let startImg = 0; //Start from # images
-let maxImg = 8; //Maximum images
-let autoPlaying = false; //Auto play the slide from the start
+//---------------------- Can be edited
+//Auto play from the start
+let autoPlaying = false;
 let timer = 2000; //Timer in ms
 
-//Do not touch
+//----------------------  Do not touch
+let maxImg = document.querySelectorAll(".containerImg img").length - 1; //Maximum images
 let positionDiv = 0;
 let idInterval;
-maxImg--;
 let autoPlay = false;
-
-let movePixels = document.querySelector(".containerImg > img").clientWidth;
+let movePixels = document.querySelector(".containerImg img").clientWidth;
 
 //Grab
 let btnArray = document.querySelectorAll(".btn-container div");

@@ -8,7 +8,6 @@ body {
 .containerGallery {
   height: 100vh;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -46,4 +45,19 @@ body {
 
 .hide {
   display: none;
+}
+
+.capture {
+  position: absolute;
+  background-color: white;
+  bottom: 0px;
+  padding: 10px 20px;
+  color: black;
+  font-weight: bolder;
+  opacity: 60%;
+  text-align: center;
+  width: 100%;
+}
+.test {
+  position: relative;
 }
