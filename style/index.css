@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.containerGallery {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerImg {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.btn-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.btn-container div {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  padding: 10px;
+  border: gray solid 1px;
+  cursor: pointer;
+}
+
+.btn-container div:first-child {
+  margin-right: 10px;
+}
+
+.monCache {
+  width: 800px;
+  border: white 1px solid;
+  overflow: hidden;
+}
