@@ -2,9 +2,14 @@
 //Auto play from the start
 let autoPlaying = false;
 let timer = 2000; //Timer in ms
+let isMiniDivActivated = false;
+
+
+let maxImg = document.querySelectorAll(".containerImg img").length - 1; //Maximum images
+if(!isMiniDivActivated){
 
 //----------------------  Do not touch
-let maxImg = document.querySelectorAll(".containerImg img").length - 1; //Maximum images
+
 let positionDiv = 0;
 let idInterval;
 let autoPlay = false;
@@ -67,7 +72,31 @@ function switchAutoMode() {
 }
 
 //Hide | display the next and previous buttons.
-function ShowHideBtns() {
-  btnArray[0].classList.toggle("hide");
-  btnArray[2].classList.toggle("hide");
+function  ShowHideBtns(){
+ 
+}
+}else{
+//Mini diapo
+
+let divMini = document.createElement("div");
+divMini.style = "display:flex;"
+document.querySelector(".containerGallery").append(divMini)
+
+//Diapos
+let imgDiapo =[]
+for (let j=1;j<=maxImg+1;j++){
+
+  imgDiapo[j]  = document.createElement("img");
+  imgDiapo[j].src = "img/0"+j+".jpg"; 
+  imgDiapo[j].style.width = "150px";
+  imgDiapo[j].classList.add("miniImg")
+  divMini.append(imgDiapo[j]);
+
+  //Events
+
+
+}
+
+
+
 }

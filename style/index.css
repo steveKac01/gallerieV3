@@ -61,3 +61,10 @@ body {
 .test {
   position: relative;
 }
+.miniImg{
+  cursor:pointer;
+}
+.miniImg:hover
+{
+border: white 1px solid;
+}
